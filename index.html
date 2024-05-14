@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人网页</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #4682b4;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #87ceeb;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        section {
+            padding: 20px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            overflow: hidden;
+        }
+        .profile-pic {
+            float: left;
+            width: 150px;
+            height: 150px;
+            margin-right: 20px;
+            border-radius: 50%;
+        }
+        .clear {
+            clear: both;
+        }
+        footer {
+            background-color: #4682b4;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>欢迎来到我的个人网页</h1>
+</header>
+
+<nav>
+    <a href="#about">关于我</a>
+    <a href="#experience">职业经历</a>
+    <a href="#education">教育背景</a>
+    <a href="#skills">技能</a>
+    <a href="#interests">兴趣爱好</a>
+    <a href="#portfolio">作品展示</a>
+    <a href="#blog">博客</a>
+    <a href="#contact">联系我</a>
+</nav>
+
+<section id="about" class="container">
+    <h2>关于我</h2>
+    <img src="你的照片路径" alt="个人照片" class="profile-pic">
+    <p>在这里写你的个人背景介绍。</p>
+    <div class="clear"></div>
+</section>
+
+<section id="experience" class="container">
+    <h2>职业经历</h2>
+    <ul>
+        <li>公司名称 - 职位 - 起止时间</li>
+        <li>公司名称 - 职位 - 起止时间</li>
+        <!-- 添加更多经历 -->
+    </ul>
+</section>
+
+<section id="education" class="container">
+    <h2>教育背景</h2>
+    <ul>
+        <li>学校名称 - 学位 - 起止时间</li>
+        <li>学校名称 - 学位 - 起止时间</li>
+        <!-- 添加更多教育背景 -->
+    </ul>
+</section>
+
+<section id="skills" class="container">
+    <h2>技能</h2>
+    <ul>
+        <li>技能 1</li>
+        <li>技能 2</li>
+        <!-- 添加更多技能 -->
+    </ul>
+</section>
+
+<section id="interests" class="container">
+    <h2>兴趣爱好</h2>
+    <ul>
+        <li>兴趣爱好 1</li>
+        <li>兴趣爱好 2</li>
+        <!-- 添加更多兴趣爱好 -->
+    </ul>
+</section>
+
+<section id="portfolio" class="container">
+    <h2>作品展示</h2>
+    <p>在这里展示你的作品。</p>
+    <!-- 添加作品展示内容 -->
+</section>
+
+<section id="blog" class="container">
+    <h2>博客</h2>
+    <p>在这里写你的博客文章。</p>
+    <!-- 添加博客文章内容 -->
+</section>
+
+<section id="contact" class="container">
+    <h2>联系我</h2>
+    <form action="mailto:your-email@example.com" method="post" enctype="text/plain">
+        <label for="name">姓名:</label><br>
+        <input type="text" id="name" name="name"><br>
+        <label for="email">邮箱:</label><br>
+        <input type="email" id="email" name="email"><br>
+        <label for="message">信息:</label><br>
+        <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
+        <input type="submit" value="发送">
+    </form>
+    <h3>社交媒体</h3>
+    <a href="你的微博链接">微博</a><br>
+    <a href="你的微信链接">微信</a><br>
+    <!-- 添加更多社交媒体链接 -->
+</section>
+
+<footer>
+    <p>&copy; 2024 你的名字. 保留所有权利。</p>
+</footer>
+
+</body>
+</html>
